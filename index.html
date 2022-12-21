@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Surprise</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+      body {
+        background-color: black;
+      }
+      button {
+        font-family: "Roboto", sans-serif;
+        display: block;
+        margin: 10px auto;
+        background-color: #f22d2d;
+        color: #ffffff;
+        font-size: 30px;
+        border: 0;
+        padding: 25px 45px;
+        border-radius: 12px;
+      }
+
+      img {
+        width: 300px;
+        display: none;
+        margin: 60px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="showSurprise('olá')">
+      Click to reveal
+    </button>
+
+    <img
+      src="https://i.pinimg.com/originals/8c/2b/7c/8c2b7cd3af71c5f2c9a0e8d14a083b63.jpg"
+    />
+    <script>
+      function showSurprise() {
+        document.querySelector("img").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
